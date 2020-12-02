@@ -70,6 +70,7 @@ export function fromCode(code: 507): ServerError.InsufficientStorage
 export function fromCode(code: 508): ServerError.LoopDetected
 export function fromCode(code: 510): ServerError.NotExtended
 export function fromCode(code: 511): ServerError.NetworkAuthenticationRequired
+export function fromCode(code: number): HTTPStatus
 export function fromCode(code: number): HTTPStatus {
   switch (code) {
     case 100: return new Informational.Continue()
