@@ -1,4 +1,5 @@
 import { HTTPStatus } from './http-status'
+import { Successful } from './enum'
 
 export class HTTPSuccessful implements HTTPStatus {
   constructor(public readonly code: number, public readonly text: string) {}
@@ -6,60 +7,60 @@ export class HTTPSuccessful implements HTTPStatus {
 
 export class OK extends HTTPSuccessful {
   constructor() {
-    super(200, 'OK')
+    super(Successful.OK, 'OK')
   }
 }
 
 export class Created extends HTTPSuccessful {
   constructor() {
-    super(201, 'Created')
+    super(Successful.Created, 'Created')
   }
 }
 
 export class Accepted extends HTTPSuccessful {
   constructor() {
-    super(202, 'Accepted')
+    super(Successful.Accepted, 'Accepted')
   }
 }
 
 export class NonAuthoritativeInformation extends HTTPSuccessful {
   constructor() {
-    super(203, 'Non-Authoritative Information')
+    super(Successful.NonAuthoritativeInformation, 'Non-Authoritative Information')
   }
 }
 
 export class NoContent extends HTTPSuccessful {
   constructor() {
-    super(204, 'No Content')
+    super(Successful.NoContent, 'No Content')
   }
 }
 
 export class ResetContent extends HTTPSuccessful {
   constructor() {
-    super(205, 'Reset Content')
+    super(Successful.ResetContent, 'Reset Content')
   }
 }
 
 export class PartialContent extends HTTPSuccessful {
   constructor() {
-    super(206, 'Partial Content')
+    super(Successful.PartialContent, 'Partial Content')
   }
 }
 
 export class MultiStatus extends HTTPSuccessful {
   constructor() {
-    super(207, 'Multi-Status')
+    super(Successful.MultiStatus, 'Multi-Status')
   }
 }
 
 export class AlreadyReported extends HTTPSuccessful {
   constructor() {
-    super(208, 'Already Reported')
+    super(Successful.AlreadyReported, 'Already Reported')
   }
 }
 
 export class IMUsed extends HTTPSuccessful {
   constructor() {
-    super(226, 'IM Used')
+    super(Successful.IMUsed, 'IM Used')
   }
 }
