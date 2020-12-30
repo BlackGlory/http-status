@@ -1,6 +1,6 @@
 {
   "name": "@blackglory/http-status",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A class-based HTTP status library",
   "keywords": [
     "http",
