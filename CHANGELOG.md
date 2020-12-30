@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/BlackGlory/http-status/compare/v0.1.2...v0.1.3) (2020-12-30)
+
+
+### Features
+
+* support message for errors ([8f2f382](https://github.com/BlackGlory/http-status/commit/8f2f38262f0562f256d44312ac6617d240b44fcf))
+
 ### [0.1.2](https://github.com/BlackGlory/http-status/compare/v0.1.1...v0.1.2) (2020-12-16)
 
 ### [0.1.1](https://github.com/BlackGlory/http-status/compare/v0.1.0...v0.1.1) (2020-12-02)
