@@ -70,7 +70,7 @@ export function fromCode(code: 507, message?: string): ServerError.InsufficientS
 export function fromCode(code: 508, message?: string): ServerError.LoopDetected
 export function fromCode(code: 510, message?: string): ServerError.NotExtended
 export function fromCode(code: 511, message?: string): ServerError.NetworkAuthenticationRequired
-export function fromCode(code: number): HTTPStatus
+export function fromCode(code: number, message?: string): HTTPStatus
 export function fromCode(code: number, message?: string): HTTPStatus {
   switch (code) {
     case 100: return new Informational.Continue()
