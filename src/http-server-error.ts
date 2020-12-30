@@ -4,67 +4,67 @@ import { ServerError } from './enum'
 export class HTTPServerError extends HTTPError {}
 
 export class InternalServerError extends HTTPServerError {
-  constructor() {
-    super(ServerError.InternalServerError, 'Internal Server Error')
+  constructor(message?: string) {
+    super(ServerError.InternalServerError, message ?? 'Internal Server Error')
   }
 }
 
 export class NotImplemented extends HTTPServerError {
-  constructor() {
-    super(ServerError.NotImplemented, 'Not Implemented')
+  constructor(message?: string) {
+    super(ServerError.NotImplemented, message ?? 'Not Implemented')
   }
 }
 
 export class BadGateway extends HTTPServerError {
-  constructor() {
-    super(ServerError.BadGateway, 'Bad Gateway')
+  constructor(message?: string) {
+    super(ServerError.BadGateway, message ?? 'Bad Gateway')
   }
 }
 
 export class ServiceUnavailable extends HTTPServerError {
-  constructor() {
-    super(ServerError.ServiceUnavailable, 'Service Unavailable')
+  constructor(message?: string) {
+    super(ServerError.ServiceUnavailable, message ?? 'Service Unavailable')
   }
 }
 
 export class GatewayTimeout extends HTTPServerError {
-  constructor() {
-    super(ServerError.GatewayTimeout, 'Gateway Timeout')
+  constructor(message?: string) {
+    super(ServerError.GatewayTimeout, message ?? 'Gateway Timeout')
   }
 }
 
 export class HTTPVersionNotSupported extends HTTPServerError {
-  constructor() {
-    super(ServerError.HTTPVersionNotSupported, 'HTTP Version Not Supported')
+  constructor(message?: string) {
+    super(ServerError.HTTPVersionNotSupported, message ?? 'HTTP Version Not Supported')
   }
 }
 
 export class VariantAlsoNegotiates extends HTTPServerError {
-  constructor() {
-    super(ServerError.VariantAlsoNegotiates, 'Variant Also Negotiates')
+  constructor(message?: string) {
+    super(ServerError.VariantAlsoNegotiates, message ?? 'Variant Also Negotiates')
   }
 }
 
 export class InsufficientStorage extends HTTPServerError {
-  constructor() {
-    super(ServerError.InsufficientStorage, 'Insufficient Storage')
+  constructor(message?: string) {
+    super(ServerError.InsufficientStorage, message ?? 'Insufficient Storage')
   }
 }
 
 export class LoopDetected extends HTTPServerError {
-  constructor() {
-    super(ServerError.LoopDetected, 'Loop Detected')
+  constructor(message?: string) {
+    super(ServerError.LoopDetected, message ?? 'Loop Detected')
   }
 }
 
 export class NotExtended extends HTTPServerError {
-  constructor() {
-    super(ServerError.NotExtended, 'Not Extended')
+  constructor(message?: string) {
+    super(ServerError.NotExtended, message ?? 'Not Extended')
   }
 }
 
 export class NetworkAuthenticationRequired extends HTTPServerError {
-  constructor() {
-    super(ServerError.NetworkAuthenticationRequired, 'Network Authentication Required')
+  constructor(message?: string) {
+    super(ServerError.NetworkAuthenticationRequired, message ?? 'Network Authentication Required')
   }
 }

@@ -33,45 +33,45 @@ export function fromCode(code: 303): Redirection.SeeOther
 export function fromCode(code: 304): Redirection.NotModified
 export function fromCode(code: 307): Redirection.TemporaryRedirect
 export function fromCode(code: 308): Redirection.PermanentRedirect
-export function fromCode(code: 400): ClientError.BadRequest
-export function fromCode(code: 401): ClientError.Unauthorized
-export function fromCode(code: 403): ClientError.Forbidden
-export function fromCode(code: 404): ClientError.NotFound
-export function fromCode(code: 405): ClientError.MethodNotAllowed
-export function fromCode(code: 406): ClientError.NotAcceptable
-export function fromCode(code: 407): ClientError.ProxyAuthenticationRequired
-export function fromCode(code: 408): ClientError.RequestTimeout
-export function fromCode(code: 409): ClientError.Conflict
-export function fromCode(code: 410): ClientError.Gone
-export function fromCode(code: 411): ClientError.LengthRequired
-export function fromCode(code: 412): ClientError.PreconditionFailed
-export function fromCode(code: 413): ClientError.PayloadTooLarge
-export function fromCode(code: 414): ClientError.URITooLong
-export function fromCode(code: 415): ClientError.UnsupportedMediaType
-export function fromCode(code: 416): ClientError.RangeNotSatisfiable
-export function fromCode(code: 417): ClientError.ExpectationFailed
-export function fromCode(code: 421): ClientError.MisdirectedRequest
-export function fromCode(code: 422): ClientError.UnprocessableEntity
-export function fromCode(code: 423): ClientError.Locked
-export function fromCode(code: 424): ClientError.FailedDependency
-export function fromCode(code: 426): ClientError.UpgradeRequired
-export function fromCode(code: 428): ClientError.PreconditionRequired
-export function fromCode(code: 429): ClientError.TooManyRequests
-export function fromCode(code: 431): ClientError.RequestHeaderFieldsTooLarge
-export function fromCode(code: 451): ClientError.UnavailableForLegalReasons
-export function fromCode(code: 500): ServerError.InternalServerError
-export function fromCode(code: 501): ServerError.NotImplemented
-export function fromCode(code: 502): ServerError.BadGateway
-export function fromCode(code: 503): ServerError.ServiceUnavailable
-export function fromCode(code: 504): ServerError.GatewayTimeout
-export function fromCode(code: 505): ServerError.HTTPVersionNotSupported
-export function fromCode(code: 506): ServerError.VariantAlsoNegotiates
-export function fromCode(code: 507): ServerError.InsufficientStorage
-export function fromCode(code: 508): ServerError.LoopDetected
-export function fromCode(code: 510): ServerError.NotExtended
-export function fromCode(code: 511): ServerError.NetworkAuthenticationRequired
+export function fromCode(code: 400, message?: string): ClientError.BadRequest
+export function fromCode(code: 401, message?: string): ClientError.Unauthorized
+export function fromCode(code: 403, message?: string): ClientError.Forbidden
+export function fromCode(code: 404, message?: string): ClientError.NotFound
+export function fromCode(code: 405, message?: string): ClientError.MethodNotAllowed
+export function fromCode(code: 406, message?: string): ClientError.NotAcceptable
+export function fromCode(code: 407, message?: string): ClientError.ProxyAuthenticationRequired
+export function fromCode(code: 408, message?: string): ClientError.RequestTimeout
+export function fromCode(code: 409, message?: string): ClientError.Conflict
+export function fromCode(code: 410, message?: string): ClientError.Gone
+export function fromCode(code: 411, message?: string): ClientError.LengthRequired
+export function fromCode(code: 412, message?: string): ClientError.PreconditionFailed
+export function fromCode(code: 413, message?: string): ClientError.PayloadTooLarge
+export function fromCode(code: 414, message?: string): ClientError.URITooLong
+export function fromCode(code: 415, message?: string): ClientError.UnsupportedMediaType
+export function fromCode(code: 416, message?: string): ClientError.RangeNotSatisfiable
+export function fromCode(code: 417, message?: string): ClientError.ExpectationFailed
+export function fromCode(code: 421, message?: string): ClientError.MisdirectedRequest
+export function fromCode(code: 422, message?: string): ClientError.UnprocessableEntity
+export function fromCode(code: 423, message?: string): ClientError.Locked
+export function fromCode(code: 424, message?: string): ClientError.FailedDependency
+export function fromCode(code: 426, message?: string): ClientError.UpgradeRequired
+export function fromCode(code: 428, message?: string): ClientError.PreconditionRequired
+export function fromCode(code: 429, message?: string): ClientError.TooManyRequests
+export function fromCode(code: 431, message?: string): ClientError.RequestHeaderFieldsTooLarge
+export function fromCode(code: 451, message?: string): ClientError.UnavailableForLegalReasons
+export function fromCode(code: 500, message?: string): ServerError.InternalServerError
+export function fromCode(code: 501, message?: string): ServerError.NotImplemented
+export function fromCode(code: 502, message?: string): ServerError.BadGateway
+export function fromCode(code: 503, message?: string): ServerError.ServiceUnavailable
+export function fromCode(code: 504, message?: string): ServerError.GatewayTimeout
+export function fromCode(code: 505, message?: string): ServerError.HTTPVersionNotSupported
+export function fromCode(code: 506, message?: string): ServerError.VariantAlsoNegotiates
+export function fromCode(code: 507, message?: string): ServerError.InsufficientStorage
+export function fromCode(code: 508, message?: string): ServerError.LoopDetected
+export function fromCode(code: 510, message?: string): ServerError.NotExtended
+export function fromCode(code: 511, message?: string): ServerError.NetworkAuthenticationRequired
 export function fromCode(code: number): HTTPStatus
-export function fromCode(code: number): HTTPStatus {
+export function fromCode(code: number, message?: string): HTTPStatus {
   switch (code) {
     case 100: return new Informational.Continue()
     case 101: return new Informational.SwitchingProtocol()
@@ -94,43 +94,43 @@ export function fromCode(code: number): HTTPStatus {
     case 304: return new Redirection.NotModified()
     case 307: return new Redirection.TemporaryRedirect()
     case 308: return new Redirection.PermanentRedirect()
-    case 400: return new ClientError.BadRequest()
-    case 401: return new ClientError.Unauthorized()
-    case 403: return new ClientError.Forbidden()
-    case 404: return new ClientError.NotFound()
-    case 405: return new ClientError.MethodNotAllowed()
-    case 406: return new ClientError.NotAcceptable()
-    case 407: return new ClientError.ProxyAuthenticationRequired()
-    case 408: return new ClientError.RequestTimeout()
-    case 409: return new ClientError.Conflict()
-    case 410: return new ClientError.Gone()
-    case 411: return new ClientError.LengthRequired()
-    case 412: return new ClientError.PreconditionFailed()
-    case 413: return new ClientError.PayloadTooLarge()
-    case 414: return new ClientError.URITooLong()
-    case 415: return new ClientError.UnsupportedMediaType()
-    case 416: return new ClientError.RangeNotSatisfiable()
-    case 417: return new ClientError.ExpectationFailed()
-    case 421: return new ClientError.MisdirectedRequest()
-    case 422: return new ClientError.UnprocessableEntity()
-    case 423: return new ClientError.Locked()
-    case 424: return new ClientError.FailedDependency()
-    case 426: return new ClientError.UpgradeRequired()
-    case 428: return new ClientError.PreconditionRequired()
-    case 429: return new ClientError.TooManyRequests()
-    case 431: return new ClientError.RequestHeaderFieldsTooLarge()
-    case 451: return new ClientError.UnavailableForLegalReasons()
-    case 500: return new ServerError.InternalServerError()
-    case 501: return new ServerError.NotImplemented()
-    case 502: return new ServerError.BadGateway()
-    case 503: return new ServerError.ServiceUnavailable()
-    case 504: return new ServerError.GatewayTimeout()
-    case 505: return new ServerError.HTTPVersionNotSupported()
-    case 506: return new ServerError.VariantAlsoNegotiates()
-    case 507: return new ServerError.InsufficientStorage()
-    case 508: return new ServerError.LoopDetected()
-    case 510: return new ServerError.NotExtended()
-    case 511: return new ServerError.NetworkAuthenticationRequired()
+    case 400: return new ClientError.BadRequest(message)
+    case 401: return new ClientError.Unauthorized(message)
+    case 403: return new ClientError.Forbidden(message)
+    case 404: return new ClientError.NotFound(message)
+    case 405: return new ClientError.MethodNotAllowed(message)
+    case 406: return new ClientError.NotAcceptable(message)
+    case 407: return new ClientError.ProxyAuthenticationRequired(message)
+    case 408: return new ClientError.RequestTimeout(message)
+    case 409: return new ClientError.Conflict(message)
+    case 410: return new ClientError.Gone(message)
+    case 411: return new ClientError.LengthRequired(message)
+    case 412: return new ClientError.PreconditionFailed(message)
+    case 413: return new ClientError.PayloadTooLarge(message)
+    case 414: return new ClientError.URITooLong(message)
+    case 415: return new ClientError.UnsupportedMediaType(message)
+    case 416: return new ClientError.RangeNotSatisfiable(message)
+    case 417: return new ClientError.ExpectationFailed(message)
+    case 421: return new ClientError.MisdirectedRequest(message)
+    case 422: return new ClientError.UnprocessableEntity(message)
+    case 423: return new ClientError.Locked(message)
+    case 424: return new ClientError.FailedDependency(message)
+    case 426: return new ClientError.UpgradeRequired(message)
+    case 428: return new ClientError.PreconditionRequired(message)
+    case 429: return new ClientError.TooManyRequests(message)
+    case 431: return new ClientError.RequestHeaderFieldsTooLarge(message)
+    case 451: return new ClientError.UnavailableForLegalReasons(message)
+    case 500: return new ServerError.InternalServerError(message)
+    case 501: return new ServerError.NotImplemented(message)
+    case 502: return new ServerError.BadGateway(message)
+    case 503: return new ServerError.ServiceUnavailable(message)
+    case 504: return new ServerError.GatewayTimeout(message)
+    case 505: return new ServerError.HTTPVersionNotSupported(message)
+    case 506: return new ServerError.VariantAlsoNegotiates(message)
+    case 507: return new ServerError.InsufficientStorage(message)
+    case 508: return new ServerError.LoopDetected(message)
+    case 510: return new ServerError.NotExtended(message)
+    case 511: return new ServerError.NetworkAuthenticationRequired(message)
     default: throw new UnknownHTTPStatusError(code)
   }
 }

@@ -4,157 +4,157 @@ import { ClientError } from './enum'
 export class HTTPClientError extends HTTPError {}
 
 export class BadRequest extends HTTPClientError {
-  constructor() {
-    super(ClientError.BadRequest, 'Bad Request')
+  constructor(message?: string) {
+    super(ClientError.BadRequest, message ?? 'Bad Request')
   }
 }
 
 export class Unauthorized extends HTTPClientError {
-  constructor() {
-    super(ClientError.Unauthorized, 'Unauthorized')
+  constructor(message?: string) {
+    super(ClientError.Unauthorized, message ?? 'Unauthorized')
   }
 }
 
 export class Forbidden extends HTTPClientError {
-  constructor() {
-    super(ClientError.Forbidden, 'Forbidden')
+  constructor(message?: string) {
+    super(ClientError.Forbidden, message ?? 'Forbidden')
   }
 }
 
 export class NotFound extends HTTPClientError {
-  constructor() {
-    super(ClientError.NotFound, 'Not Found')
+  constructor(message?: string) {
+    super(ClientError.NotFound, message ?? 'Not Found')
   }
 }
 
 export class MethodNotAllowed extends HTTPClientError {
-  constructor() {
-    super(ClientError.MethodNotAllowed, 'Method Not Allowed')
+  constructor(message?: string) {
+    super(ClientError.MethodNotAllowed, message ?? 'Method Not Allowed')
   }
 }
 
 export class NotAcceptable extends HTTPClientError {
-  constructor() {
-    super(ClientError.NotAcceptable, 'Not Acceptable')
+  constructor(message?: string) {
+    super(ClientError.NotAcceptable, message ?? 'Not Acceptable')
   }
 }
 
 export class ProxyAuthenticationRequired extends HTTPClientError {
-  constructor() {
-    super(ClientError.ProxyAuthenticationRequired, 'Proxy Authentication Required')
+  constructor(message?: string) {
+    super(ClientError.ProxyAuthenticationRequired, message ?? 'Proxy Authentication Required')
   }
 }
 
 export class RequestTimeout extends HTTPClientError {
-  constructor() {
-    super(ClientError.RequestTimeout, 'Request Timeout')
+  constructor(message?: string) {
+    super(ClientError.RequestTimeout, message ?? 'Request Timeout')
   }
 }
 
 export class Conflict extends HTTPClientError {
-  constructor() {
-    super(ClientError.Conflict, 'Conflict')
+  constructor(message?: string) {
+    super(ClientError.Conflict, message ?? 'Conflict')
   }
 }
 
 export class Gone extends HTTPClientError {
-  constructor() {
-    super(ClientError.Gone, 'Gone')
+  constructor(message?: string) {
+    super(ClientError.Gone, message ?? 'Gone')
   }
 }
 
 export class LengthRequired extends HTTPClientError {
-  constructor() {
-    super(ClientError.LengthRequired, 'Length Required')
+  constructor(message?: string) {
+    super(ClientError.LengthRequired, message ?? 'Length Required')
   }
 }
 
 export class PreconditionFailed extends HTTPClientError {
-  constructor() {
-    super(ClientError.PreconditionFailed, 'Precondition Failed')
+  constructor(message?: string) {
+    super(ClientError.PreconditionFailed, message ?? 'Precondition Failed')
   }
 }
 
 export class PayloadTooLarge extends HTTPClientError {
-  constructor() {
-    super(ClientError.PayloadTooLarge, 'Payload Too Large')
+  constructor(message?: string) {
+    super(ClientError.PayloadTooLarge, message ?? 'Payload Too Large')
   }
 }
 
 export class URITooLong extends HTTPClientError {
-  constructor() {
-    super(ClientError.URITooLong, 'URI Too Long')
+  constructor(message?: string) {
+    super(ClientError.URITooLong, message ?? 'URI Too Long')
   }
 }
 
 export class UnsupportedMediaType extends HTTPClientError {
-  constructor() {
-    super(ClientError.UnsupportedMediaType, 'Unsupported Media Type')
+  constructor(message?: string) {
+    super(ClientError.UnsupportedMediaType, message ?? 'Unsupported Media Type')
   }
 }
 
 export class RangeNotSatisfiable extends HTTPClientError {
-  constructor() {
-    super(ClientError.RangeNotSatisfiable, 'Range Not Satisfiable')
+  constructor(message?: string) {
+    super(ClientError.RangeNotSatisfiable, message ?? 'Range Not Satisfiable')
   }
 }
 
 export class ExpectationFailed extends HTTPClientError {
-  constructor() {
-    super(ClientError.ExpectationFailed, 'Expectation Failed')
+  constructor(message?: string) {
+    super(ClientError.ExpectationFailed, message ?? 'Expectation Failed')
   }
 }
 
 export class MisdirectedRequest extends HTTPClientError {
-  constructor() {
-    super(ClientError.MisdirectedRequest, 'Misdirected Request')
+  constructor(message?: string) {
+    super(ClientError.MisdirectedRequest, message ?? 'Misdirected Request')
   }
 }
 
 export class UnprocessableEntity extends HTTPClientError {
-  constructor() {
-    super(ClientError.UnprocessableEntity, 'Unprocessable Entity')
+  constructor(message?: string) {
+    super(ClientError.UnprocessableEntity, message ?? 'Unprocessable Entity')
   }
 }
 
 export class Locked extends HTTPClientError {
-  constructor() {
-    super(ClientError.Locked, 'Locked')
+  constructor(message?: string) {
+    super(ClientError.Locked, message ?? 'Locked')
   }
 }
 
 export class FailedDependency extends HTTPClientError {
-  constructor() {
-    super(ClientError.FailedDependency, 'Failed Dependency')
+  constructor(message?: string) {
+    super(ClientError.FailedDependency, message ?? 'Failed Dependency')
   }
 }
 
 export class UpgradeRequired extends HTTPClientError {
-  constructor() {
-    super(ClientError.UpgradeRequired, 'Upgrade Required')
+  constructor(message?: string) {
+    super(ClientError.UpgradeRequired, message ?? 'Upgrade Required')
   }
 }
 
 export class PreconditionRequired extends HTTPClientError {
-  constructor() {
-    super(ClientError.PreconditionRequired, 'Precondition Required')
+  constructor(message?: string) {
+    super(ClientError.PreconditionRequired, message ?? 'Precondition Required')
   }
 }
 
 export class TooManyRequests extends HTTPClientError {
-  constructor() {
-    super(ClientError.TooManyRequests, 'Too Many Requests')
+  constructor(message?: string) {
+    super(ClientError.TooManyRequests, message ?? 'Too Many Requests')
   }
 }
 
 export class RequestHeaderFieldsTooLarge extends HTTPClientError {
-  constructor() {
-    super(ClientError.RequestHeaderFieldsTooLarge, 'Request Header Fields Too Large')
+  constructor(message?: string) {
+    super(ClientError.RequestHeaderFieldsTooLarge, message ?? 'Request Header Fields Too Large')
   }
 }
 
 export class UnavailableForLegalReasons extends HTTPClientError {
-  constructor() {
-    super(ClientError.UnavailableForLegalReasons, 'Unavailable For Legal Reasons')
+  constructor(message?: string) {
+    super(ClientError.UnavailableForLegalReasons, message ?? 'Unavailable For Legal Reasons')
   }
 }
