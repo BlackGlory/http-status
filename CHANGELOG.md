@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/BlackGlory/http-status/compare/v0.1.9...v0.2.0) (2021-02-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* HTTPStatus.text => HTTPStatus.message
+
+### Features
+
+* rename text to message ([ba7d42e](https://github.com/BlackGlory/http-status/commit/ba7d42e5462e6330c14121771d9e116c8ee83316))
+
 ### [0.1.9](https://github.com/BlackGlory/http-status/compare/v0.1.8...v0.1.9) (2021-02-04)
 
 ### [0.1.8](https://github.com/BlackGlory/http-status/compare/v0.1.7...v0.1.8) (2021-02-03)
