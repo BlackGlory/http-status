@@ -24,7 +24,7 @@ When the status code is unknown, it will throw `UnkonwnHTTPStatusError`.
 ```ts
 interface HTTPStatus {
   code: number
-  text: string
+  message: string
 }
 ```
 

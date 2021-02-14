@@ -2,7 +2,7 @@ import { HTTPStatus } from './http-status'
 import { Successful } from './enum'
 
 export class HTTPSuccessful implements HTTPStatus {
-  constructor(public readonly code: number, public readonly text: string) {}
+  constructor(public readonly code: number, public readonly message: string) {}
 }
 
 export class OK extends HTTPSuccessful {

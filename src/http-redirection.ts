@@ -2,7 +2,7 @@ import { HTTPStatus } from './http-status'
 import { Redirection } from './enum'
 
 export class HTTPRedirection implements HTTPStatus {
-  constructor(public readonly code: number, public readonly text: string) {}
+  constructor(public readonly code: number, public readonly message: string) {}
 }
 
 export class MultipleChoice extends HTTPRedirection {

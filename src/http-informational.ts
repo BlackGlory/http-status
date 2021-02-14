@@ -2,7 +2,7 @@ import { HTTPStatus } from './http-status'
 import { Informational } from './enum'
 
 export class HTTPInformational implements HTTPStatus {
-  constructor(public readonly code: number, public readonly text: string) {}
+  constructor(public readonly code: number, public readonly message: string) {}
 }
 
 export class Continue extends HTTPInformational {

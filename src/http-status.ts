@@ -2,5 +2,5 @@ export type HTTPStatusConstructor = new (code: number, text: string) => HTTPStat
 
 export interface HTTPStatus {
   code: number
-  text: string
+  message: string
 }
