@@ -1,5 +1,5 @@
-import { HTTPStatus } from './http-status'
-import { Informational } from './enum'
+import { HTTPStatus } from './http-status.js'
+import { Informational } from './enum.js'
 
 export class HTTPInformational implements HTTPStatus {
   constructor(public readonly code: number, public readonly message: string) {}

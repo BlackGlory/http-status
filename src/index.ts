@@ -1,10 +1,10 @@
-export * from './http-status'
-export * from './http-error'
+export * from './http-status.js'
+export * from './http-error.js'
 
-export * from './http-informational' // 1xx
-export * from './http-successful' // 2xx
-export * from './http-redirection' // 3xx
-export * from './http-client-error' // 4xx
-export * from './http-server-error' // 5xx
+export * from './http-informational.js' // 1xx
+export * from './http-successful.js' // 2xx
+export * from './http-redirection.js' // 3xx
+export * from './http-client-error.js' // 4xx
+export * from './http-server-error.js' // 5xx
 
-export * from './utils'
+export * from './utils.js'

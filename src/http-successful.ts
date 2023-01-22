@@ -1,5 +1,5 @@
-import { HTTPStatus } from './http-status'
-import { Successful } from './enum'
+import { HTTPStatus } from './http-status.js'
+import { Successful } from './enum.js'
 
 export class HTTPSuccessful implements HTTPStatus {
   constructor(public readonly code: number, public readonly message: string) {}

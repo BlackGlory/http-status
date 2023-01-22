@@ -1,5 +1,5 @@
 import { getError } from 'return-style'
-import { fromCode, UnknownHTTPStatusError, NotFound } from '@src/index'
+import { fromCode, UnknownHTTPStatusError, NotFound } from '@src/index.js'
 
 describe('fromCode(code: number): HTTPStatus', () => {
   describe('known code', () => {

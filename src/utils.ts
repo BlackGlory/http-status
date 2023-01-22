@@ -1,9 +1,9 @@
-import { HTTPStatus } from './http-status'
-import * as Informational from './http-informational'
-import * as Successful from './http-successful'
-import * as Redirection from './http-redirection'
-import * as ClientError from './http-client-error'
-import * as ServerError from './http-server-error'
+import { HTTPStatus } from './http-status.js'
+import * as Informational from './http-informational.js'
+import * as Successful from './http-successful.js'
+import * as Redirection from './http-redirection.js'
+import * as ClientError from './http-client-error.js'
+import * as ServerError from './http-server-error.js'
 
 export class UnknownHTTPStatusError extends Error {
   name = this.constructor.name

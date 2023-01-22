@@ -1,5 +1,5 @@
-import { HTTPError } from './http-error'
-import { ServerError } from './enum'
+import { HTTPError } from './http-error.js'
+import { ServerError } from './enum.js'
 
 export class HTTPServerError extends HTTPError {}
 

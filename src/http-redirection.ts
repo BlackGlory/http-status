@@ -1,5 +1,5 @@
-import { HTTPStatus } from './http-status'
-import { Redirection } from './enum'
+import { HTTPStatus } from './http-status.js'
+import { Redirection } from './enum.js'
 
 export class HTTPRedirection implements HTTPStatus {
   constructor(public readonly code: number, public readonly message: string) {}

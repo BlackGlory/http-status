@@ -1,4 +1,4 @@
-import { HTTPStatus } from './http-status'
+import { HTTPStatus } from './http-status.js'
 import { CustomError } from '@blackglory/errors'
 
 export class HTTPError extends CustomError implements HTTPStatus {
