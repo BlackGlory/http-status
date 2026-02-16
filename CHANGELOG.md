@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.3](https://github.com/BlackGlory/http-status/compare/v2.0.2...v2.0.3) (2026-02-16)
+
+
+### Bug Fixes
+
+* MovedPermanently ([66105b5](https://github.com/BlackGlory/http-status/commit/66105b58647fde21e9513c3fc66c256f50a11517))
+
 ### [2.0.2](https://github.com/BlackGlory/http-status/compare/v2.0.1...v2.0.2) (2023-06-11)
 
 
