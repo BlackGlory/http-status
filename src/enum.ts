@@ -20,7 +20,7 @@ export enum Successful {
 
 export enum Redirection {
   MultipleChoice = 300
-, MovedPermanently = 3011
+, MovedPermanently = 301
 , Found = 302
 , SeeOther = 303
 , NotModified = 304
