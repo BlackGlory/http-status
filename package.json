@@ -65,6 +65,6 @@
     "typescript-transform-paths": "^3.4.6"
   },
   "dependencies": {
-    "@blackglory/errors": "^2.4.3"
+    "@blackglory/errors": "^3.1.0"
   }
 }
